@@ -16,10 +16,5 @@ for c in plaintext.upper():
         ciphertext += I2L[ (L2I[c] + key)%26 ]
     else:
         ciphertext += c
-for c in ciphertext.upper():
-    if c.isalpha():
-        plaintext2 += I2L[ (L2I[c] - key)%26 ]
-    else:
-        plaintext2 += c
 # Cipher & Settings
-print(f"Original Message: {plaintext} \n Ciphered Message: {ciphertext} \n Key: {key}")
+print(f"Original Message: {plaintext} \nCiphered Message: {ciphertext} \nKey: {key}")
