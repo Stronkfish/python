@@ -21,9 +21,3 @@ for c in range(pwlen):
     pw += random.choice(c2)
 # String & Settings
 print(f"String Generated \nLength: {pwlen} \nCharacter Set: {c2} \nPassword: {pw}")
-# pwlen = Password Length
-    # psORu = Preselected Character set or User Character set
-        # c = Characters
-            # c2 = Character set
-                # c3s Preselected Character Sets
-                    # pw = Password
