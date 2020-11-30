@@ -1,10 +1,21 @@
-main = input("Calculator\n\nAddition = a\nSubtraction = b\nMultiplication = c\nDivision = d\n\n")
-if main == "a":
-    print("\nYou have chosen Addition.\n\n")
+main = input("Stronkfish Brand Calculator\n\nAddition = a\nSubtraction = b\nMultiplication = c\nDivision = d\n\n") # Selecting Operation (1)
+if main == "a": # Calculation (2-21)
+    print("\nOperation: Addition\n")
+    a = int(input("First Number: "))
+    b = int(input("Second Number: "))
+    print(f"\nAnswer: {a + b}")
 if main == "b":
-    print("cool")
+    print("\nOperation: Subtraction\n")
+    a = int(input("First Number: "))
+    b = int(input("Second Number: "))
+    print(f"\nAnswer: {a - b}")
 if main == "c":
-    print("cheese")
+    print("\nOperation: Multiplication\n")
+    a = int(input("First Number: "))
+    b = int(input("Second Number: "))
+    print(f"\nAnswer: {a * b}")
 if main == "d":
-    print("beans")
-# placeholder
+    print("\nOperation: Division\n")
+    a = int(input("First Number: "))
+    b = int(input("Second Number: "))
+    print(f"\nAnswer: {a / b}")
