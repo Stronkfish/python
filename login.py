@@ -1,7 +1,7 @@
 u3 = "sysadmin" # Admin Account Details (1-3)
 pw3 = "boomer"
 e3 = "sysadmin@gmail.com"
-main = input("create = Create Account \nlogin = Login an Existing Account \n") # Create or Login Account (4)
+main = input("Stronkfish Brand Login System\n\ncreate = Create Account \nlogin = Login an Existing Account \n") # Create or Login Account (4)
 if main == "create": # Create, then Login (5-15)
     u1 = input("Username: ")
     e1 = input("Email Address: ")
