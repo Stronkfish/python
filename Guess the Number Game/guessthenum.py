@@ -7,7 +7,7 @@ num = random.randint(num1, num2) # Gen (6)
 print(f"I am thinking of a number between {num1} and {num2}. You have {attw} Attempts to Guess it.") # Number Range, Attempt Count Confirmation (7)
 while att < attw: # Number Guessing (8-16)
     guess = int(input("\nGuess the number: "))
-    att = att + 1
+    att += 1
     if guess < num:
         print(f"\nToo Low!\nAttempts Remaining: {attw - att}")
     if guess > num:
