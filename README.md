@@ -1,5 +1,5 @@
 # ***pythontime.py***
-### Random Coding Projects in the Python Programming Language.
+## Random Coding Projects in the Python Programming Language.
 ### I am currently re-sorting different things, may look like a mess for a few days.
 ### I hope to make example gifs for each project.
 ###### *Don't expect the Code to be well Optimised.*
