@@ -1,0 +1,10 @@
+main = input("Stronkfish Brand Temperature Converter\n\nCLS = Convert to Celsius\nFHR = Convert to Fahrenheit\n\n")
+c2f = ""
+f2c = ""
+if main.upper() == "CLS":
+    c2f = float(input("Enter the Temperature in Celsius to convert it into Fahrenheit: "))
+    print(f"\nCelsius: {c2f} Fahrenheit: ")
+#cels= float(input("enter temp in celsius"))
+#print("temprature in celsius is :",cels)
+#fahr = cels*9/5+32
+#print("temprature in fahrenhite is :",fahr)
