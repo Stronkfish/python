@@ -1,14 +1,37 @@
-L2I = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ",range(26))) # Letters to Integers / Inverse (1-2)
-I2L = dict(zip(range(26),"ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
-cry = int(input("Stronkfish Brand Caesar Cipher Tool\n\nEncrypt or Decrypt? (1/2) ")) # Cipher Spec (3-5)
-pltxt = input("Enter the Message you would like to Encrypt/Decrypt: ")
-key = int(input("What would you like the Key to be? "))
-citxt = "" # Cipher (6-13)
-if cry == 2:
-    key = -key
-for c in pltxt.upper():
-    if c.isalpha():
-        citxt += I2L[ (L2I[c] + key)%26 ]
-    else:
-        citxt += c
-print(f"Original Message: {pltxt} \nCiphered Message: {citxt} \nKey: {key}") # Cipher & Settings (14)
+print("Stronkfish Brand Caesar Ciper Tool")
+print()
+
+a_char = ord("A") # is 65
+
+def char_to_int(c):
+    return ord(c) - a_char
+
+def int_to_char(i):
+    return chr(i % 26 + a_char)
+
+e_or_d = input("Encrypt or Decrypt? (E/D) ")[:1].upper() # Take the first character and make it uppercase
+decrypt = e_or_d == "D"
+if e_or_d != "E" and not decrypt:
+    print("Please specify either encrypt (E) or decrypt (D)")
+    exit()
+
+message = input(f"Enter the message you would like to {'decrypt' if decrypt else 'encrypt'}: ")
+
+original_key = input("What would you like the key to be? ")
+try:
+    original_key = int(original_key)
+except ValueError:
+    print("Please enter an integer")
+    exit()
+
+# Flip if should decrypt
+key = -original_key if decrypt else original_key
+
+ciphered_message = "".join(int_to_char(char_to_int(c) + key % 26) if c.isalpha() else c for c in message.upper())
+
+print("""
+Stronkfish Brand Caesar Ciper Results:
+Original message: {}
+{}ed message: {}
+Key: {}
+""".format(message, "Decrypt" if decrypt else "Encrypt", ciphered_message, original_key))
