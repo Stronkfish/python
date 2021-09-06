@@ -1,4 +1,4 @@
 # **Stronkfish/python**
-Random Coding Projects in the Python Programming Language.
+Different python programs/projects.
 
 ###### *It just works.*
