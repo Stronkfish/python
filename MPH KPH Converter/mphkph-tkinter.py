@@ -10,20 +10,20 @@ beans2 = 0
 
 def click1():
     beans = int(num.get())
-    lbl = Label(tab1, font = ("Arial Bold", 12), text = (f"KPH: {beans * 1.6093}"))
+    lbl = Label(tab1, font = ("Arial Bold", 12), text = (f"K(PH): {beans * 1.6093}"))
     lbl.grid(column = 0, row = 1)
 
 def click2(): 
     beans2 = int(num2.get())
-    lbl2 = Label(tab2, font = ("Arial Bold", 12), text = (f"MPH: {beans2 * 0.6214}"))
+    lbl2 = Label(tab2, font = ("Arial Bold", 12), text = (f"M(PH): {beans2 * 0.6214}"))
     lbl2.grid(column = 0, row = 1)
 
 tab_control = ttk.Notebook(window)
 tab1 = ttk.Frame(tab_control)
 tab2 = ttk.Frame(tab_control)
 
-tab_control.add(tab1, text = "To KPH")
-tab_control.add(tab2, text = "To MPH")
+tab_control.add(tab1, text = "To K(PH)")
+tab_control.add(tab2, text = "To M(PH)")
 
 num = Entry(tab1, width = 10, font = ("Arial Bold", 12))
 btn = Button(tab1, text = "Convert", font = ("Arial Bold", 12), command = click1)
