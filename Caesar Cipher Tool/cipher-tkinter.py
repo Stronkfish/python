@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 window = Tk()
-window.title("Caeser Cipher")
+window.title("Caesar Cipher")
 window.geometry("300x300")
 
 L2I = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ",range(26)))
